@@ -154,13 +154,26 @@ Potrebno je u *Info.plist* dodati:
 Funkcija *getUriLinksStream* koja se nalazi u **uni_links** paketu sluša pozive na *hr.bla* shemu.
 
 ```dart
-  //callbackUri = hr.bla://callback?code=authorizationCode 
-  var callbackUri = getUriLinksStream().first;
-  await closeWebView();
+    import 'package:uni_links/uni_links.dart';
+    
+    ...
+    
+    // callbackUri = hr.bla://callback?code=authorizationCode 
+    var callbackUri = getUriLinksStream().first;
+    // zatvori preglednik
+    await closeWebView();
 ```
 
+#### Client Credentials Flow
 
 
+Dobivanje Clienta za Client Credentials flow je jednako za IOS i Android platformu.
+
+```dart
+    Client client = oauth2.clientCredentialsGrant(
+        tokenEndpoint, clientId, clientSecret,
+        scopes: ["openid", "profile","api"]);
+```
 
 
 
