@@ -170,7 +170,7 @@ Funkcija *getUriLinksStream* koja se nalazi u **uni_links** paketu sluša pozive
 Dobivanje Clienta za Client Credentials flow je jednako za IOS i Android platformu.
 
 ```dart
-    Client client = oauth2.clientCredentialsGrant(
+    Client client = await oauth2.clientCredentialsGrant(
         tokenEndpoint, clientId, clientSecret,
         scopes: ["openid", "profile","api"]);
 ```
