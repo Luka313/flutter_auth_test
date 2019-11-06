@@ -7,12 +7,12 @@ const String authorizationEndpoint = "/connect/authorize";
 const String logoutEndpoint = "/connect/endsession";
 const String userInfoEndpoint = "/connect/userinfo";
 
-const String redirectUri = "hr.vauceri://callback";
+const String redirectUri = "hr.bla://callback";
 
-const String clientId = "xamarin";
+const String clientId = "clientId";
 const String sanitatClientId = "sanitatClientId";
 
-const String clientSecret = "nkjff6eUQabyDKaSasVb7wk";
+const String clientSecret = "clientSecret";
 const String sanitatClientSecret = "sanitatClientSecret";
 
 const List<String> scopes = [
