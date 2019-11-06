@@ -9,10 +9,10 @@ const String userInfoEndpoint = "/connect/userinfo";
 
 const String redirectUri = "hr.vauceri://callback";
 
-const String clientId = "clientId";
+const String clientId = "xamarin";
 const String sanitatClientId = "sanitatClientId";
 
-const String clientSecret = "clientSecret";
+const String clientSecret = "nkjff6eUQabyDKaSasVb7wk";
 const String sanitatClientSecret = "sanitatClientSecret";
 
 const List<String> scopes = [

@@ -24,8 +24,6 @@ class BrowserLauncher extends InAppBrowser {
 
   @override
   void shouldOverrideUrlLoading(String url) async {
-    print('Overload!');
-    print(url);
     if (url.startsWith(redirectUri)) {
       browserResultController.add(Uri.parse(url));
     } else

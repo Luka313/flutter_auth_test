@@ -33,6 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _login() async {
     var c = await AuthHelper.getClient();
+    await AuthHelper.saveCredentials(c);
     setState(() {
       client = c;
     });
